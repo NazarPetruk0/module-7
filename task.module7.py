@@ -114,7 +114,7 @@ def add_contact(args, book):
 
 @input_error
 def change_contact(args, book):
-    name, phone,new_phone = args
+    name, old_phone,new_phone = args
     record = book.find(name)
 
     if record:
